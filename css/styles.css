@@ -1,0 +1,343 @@
+/*=============================================
+        Common Props
+ =============================================*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*=============================================
+        Nav Props begins
+ =============================================*/
+
+.navbar {
+    padding: 22px 0px;
+    border-bottom: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar ul li a{
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 13px;
+    transition: all 0.5s ease-in;
+}
+
+.navbar ul li a:hover{
+    color: tomato!important;
+    background: none !important;
+}
+
+.navbar-toggle{
+    border: 1px solid white !important; 
+    transition: all 0.5s ease-in;
+    color: white !important;
+}
+
+.navbar-toggle:hover{
+    background-color: tomato !important;
+}
+
+.icon-bar{
+    color: white !important;
+    background-color: white !important;
+}
+
+.navbar-inverse .navbar-collapse{
+    border-color: transparent!important;
+}
+
+.location{
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.navbar-inverse{
+    background-color: transparent !important;
+}
+
+/*=============================================
+        Nav Props ends
+ =============================================*/
+.secondary{
+    background-color:bisque !important;
+}
+
+/*=============================================
+        Slider Props begins
+ =============================================*/
+
+.slider{
+    width: 100%;
+    height: 700px;
+    background-image: url(..//img/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.slider-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    position: relative;
+}
+
+.slider-content{
+    position: absolute;
+    top: 39%;
+    width: 100%;
+}
+
+.icons .fa{
+  font-size: 35px;
+    margin-right: 7px;
+}
+
+.cta-div{
+    margin-top: 30px;
+    
+}
+
+.btn1{
+    padding: 13px 18px;
+    background-color: 000;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right: -6px;
+}
+
+.btn1:hover{
+    text-decoration: none;
+    color: white;
+    background-color: tomato;
+    border-color: tomato;
+}
+
+.btn2{
+    padding: 13px 18px;
+    background-color: 000;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right: 10px;
+}
+
+.btn2:hover{
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.social a.fa{
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 2px; 
+    transition: all 0.5s ease-in;
+}
+
+.social a.fa:hover{
+    text-decoration: none;
+    background-color: tomato;
+    color: white;
+    border: 1px solid tomato;
+}
+
+
+.slider .text, .slider .typed-cursor
+{
+    display: inline;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+    
+.primary{
+    color: tomato;
+}
+
+.typed-cursor{
+  opacity: 1;
+  animation: blink 0.7s infinite;
+  -webkit-animation:blink 0.7s infinite;
+  -moz-animation:blink 0.7s infinite;
+    
+    
+}
+
+@keyframes blink{
+    0%
+    {
+        opacity: 1;
+    }
+    
+    
+    50%
+    {
+        opacity: 0;
+    }
+    
+    100%
+    {
+        opacity: 1;
+    }
+    
+}
+
+@-webkit-keyframes blink{
+    0%
+    {
+        opacity: 1;
+    }
+    
+    
+    50%
+    {
+        opacity: 0;
+    }
+    
+    100%
+    {
+        opacity: 1;
+    }
+    
+}
+
+@-moz-keyframes blink{
+    0%
+    {
+        opacity: 1;
+    }
+    
+    
+    50%
+    {
+        opacity: 0;
+    }
+    
+    100%
+    {
+        opacity: 1;
+    }
+    
+}
+/*=============================================
+        Slider Props ends
+ =============================================*/
+
+/*=============================================
+        Services Props begins
+ =============================================*/
+.service-area{
+    margin-top: 30px;
+}
+
+.service-area p{
+    margin-bottom: -5px;
+}
+
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+}
+
+.service-wrap::before, .service-wrap::after{
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: bisque;
+}
+
+.service-wrap::before{
+    top: -37px;
+    left: 100%;
+}
+
+.service-wrap:hover:before{
+    left: -27px;
+    opacity: 1;
+}
+
+.service-wrap::after{
+     right: 100%;
+     bottom: -37px;  
+}
+
+.service-wrap:hover:after{
+     right: -27px;
+     opacity: 1;    
+}
+
+.service-wrap:hover{
+     color: white;    
+}
+
+.service-wrap:h3{
+     color: white;    
+}
+
+
+.service-wrap:hover h3{
+     color: white;    
+}
+
+
+.service-wrap:hover h3:after{
+     background-color: white;    
+}
+
+.service-icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    
+}
+
+
+.service-wrap:hover .service-icon i{
+    
+    transform:rotate(360deg);
+}
+
+.service-wrap h3
+{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+    
+}
+
+.service-wrap p
+{
+    font-size: 14px;
+    margin-bottom: 0;
+}
